@@ -1,7 +1,7 @@
 local config = function()
 	require("lualine").setup({
 		options = {
-			theme = "codedark",
+			theme = "tokyonight",
 			globalstatus = true,
 		},
 	})
