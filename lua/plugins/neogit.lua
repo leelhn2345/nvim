@@ -7,5 +7,15 @@ return {
 		"nvim-telescope/telescope.nvim", -- optional
 	},
 
-	config = true,
+	config = function()
+		require("neogit").setup({
+			integrations = {
+				diffview = true,
+				telescope = true,
+			},
+		})
+
+		local keymap = vim.keymap
+		keymap.set("n", "<leader>ng", ":Neogit<CR>", { desc = "Git Status" })
+	end,
 }
