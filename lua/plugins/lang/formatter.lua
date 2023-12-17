@@ -15,7 +15,7 @@ return {
 				html = { "prettierd" },
 				json = { "prettierd" },
 				yaml = { "prettierd" },
-				markdown = { "prettier" },
+				markdown = { "markdownlint" },
 				lua = { "stylua" },
 				python = { "ruff" },
 				rust = { "rust_analyzer" },
@@ -29,4 +29,3 @@ return {
 		})
 	end,
 }
-
