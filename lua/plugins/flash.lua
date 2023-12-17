@@ -15,12 +15,12 @@ return {
 		wk.register({
 			["<leader>j"] = {
 				name = "Flash",
-				-- j = {
-				-- function()
-				-- 		require("flash").jump()
-				-- 	end,
-				-- 	"Jump",
-				-- },
+				u = {
+					function()
+						require("flash").jump()
+					end,
+					"Jump",
+				},
 				t = {
 					function()
 						require("flash").treesitter()

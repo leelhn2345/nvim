@@ -25,6 +25,9 @@ cargo binstall tree-sitter-cli
 
 # for emmet-lsp
 npm i -g emmet-ls
+
+# for diff viewer
+sudo nala install mercurial -y
 ```
 
 ### Neovim Installation

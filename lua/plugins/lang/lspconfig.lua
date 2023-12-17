@@ -30,7 +30,7 @@ return {
 		-- import breadcrumbs
 		local navbuddy = require("nvim-navbuddy")
 		opts.desc = "Breadcrumbs"
-		keymap.set("n", "<leader>fj", ":Navbuddy<CR>", opts)
+		keymap.set("n", "<leader>jk", ":Navbuddy<CR>", opts)
 
 		local on_attach = function(client, bufnr)
 			opts.buffer = bufnr
