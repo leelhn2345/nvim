@@ -50,7 +50,9 @@ nvim $FILENAME
 ### Tmux
 
 This setup works with tmux as well.
-The `.tmux.conf` file will be uploaded into gist at an undetermined date.
+This is my [.tmux.conf](https://gist.github.com/leelhn2345/ae8792433f073341f6f80f85b7f9983b)
+config file.
+Just place it at `$HOME`.
 
 ### Keymaps
 
