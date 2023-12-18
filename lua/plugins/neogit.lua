@@ -16,6 +16,6 @@ return {
 		})
 
 		local keymap = vim.keymap
-		keymap.set("n", "<leader>ng", ":Neogit<CR>", { desc = "Git Status" })
+		keymap.set("n", "gi", ":Neogit<CR>", { desc = "Git Status" })
 	end,
 }
