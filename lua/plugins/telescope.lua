@@ -18,7 +18,7 @@ end
 
 return {
 	"nvim-telescope/telescope.nvim",
-  lazy = false,
+	lazy = false,
 	dependencies = {
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-lua/plenary.nvim",
@@ -26,12 +26,22 @@ return {
 	},
 	config = config,
 	keys = {
+		{
+			"<leader>ff",
+			function()
+				local builtin = require("telescope.builtin")
+				builtin.find_files({
+					no_ignore = false,
+					hidden = true,
+				})
+			end,
+			desc = "Lists files in your current working directory, respects .gitignore",
+		},
 		keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>"),
 		keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>"),
-		keymap.set("n", "<leader>ff", ":Telescope find_files<CR>"),
+		-- keymap.set("n", "<leader>ff", ":Telescope find_files<CR>"),
 		keymap.set("n", "<leader>fa", ":Telescope <CR>"),
 		keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>"),
 		keymap.set("n", "<leader>fb", ":Telescope buffers<CR>"),
 	},
 }
-
