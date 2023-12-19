@@ -10,6 +10,12 @@ local config = function()
 					["<C-k>"] = "move_selection_previous",
 				},
 			},
+			file_ignore_patterns = {
+				"node_modules",
+				".venv",
+				".git",
+				"dist",
+			},
 		},
 	})
 
@@ -37,7 +43,7 @@ return {
 			end,
 			desc = "Lists files in your current working directory, respects .gitignore",
 		},
-		keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>"),
+		keymap.set("n", "<leader>fK", ":Telescope keymaps<CR>"),
 		keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>"),
 		-- keymap.set("n", "<leader>ff", ":Telescope find_files<CR>"),
 		keymap.set("n", "<leader>fa", ":Telescope <CR>"),
