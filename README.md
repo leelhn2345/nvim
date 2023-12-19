@@ -26,6 +26,9 @@ cargo binstall tree-sitter-cli
 # for emmet-lsp
 npm i -g emmet-ls
 
+# for ts-lsp
+npm i -g typescript typescript-language-server
+
 # for diff viewer
 sudo nala install mercurial -y
 ```
@@ -69,8 +72,3 @@ Can use telescope to find the key mappings - `<leader>fk`.
 - rust
 
 LSPs, formatters, and linters should be installed and work right out of the box.
-
-### UI
-
-My default terminal has an acrylic setting and I like it.
-Depending on the terminal used, may want to delete the transparent plugin.

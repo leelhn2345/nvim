@@ -113,7 +113,15 @@ return {
 		lspconfig["emmet_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
-			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
+			filetypes = {
+				"html",
+				"typescriptreact",
+				"javascriptreact",
+				"css",
+				"sass",
+				"scss",
+				"less",
+			},
 		})
 
 		-- configure python server
@@ -128,7 +136,13 @@ return {
 			on_attach = on_attach,
 		})
 
-		-- configure rust server
+		-- configure json-lsp server
+		lspconfig["jsonls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
+		-- configure rust server (special)
 		rt.setup({
 			server = {
 				capabilities = capabilities,
@@ -136,11 +150,6 @@ return {
 			},
 		})
 
-		-- configure json-lsp server
-		lspconfig["jsonls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
 		-- configure lua server (with special settings)
 		lspconfig["lua_ls"].setup({
 			capabilities = capabilities,
