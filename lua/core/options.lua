@@ -1,12 +1,12 @@
 local opt = vim.opt
 
 -- Tab / Indentation
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.softtabstop = 2
-opt.expandtab = true
-opt.smartindent = true
-opt.wrap = false
+opt.tabstop = 4 -- number of spaces per tab
+opt.shiftwidth = 4 -- number of spaces for each level of indentation
+opt.softtabstop = 4 -- how many spaces is a tab when in insert mode
+opt.expandtab = true -- converts tab into spaces
+opt.smartindent = true -- auto indentation
+opt.wrap = false -- disable long lines from being wrapped
 
 -- Search
 opt.incsearch = true
