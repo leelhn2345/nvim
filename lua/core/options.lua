@@ -22,7 +22,7 @@ opt.colorcolumn = "80"
 opt.signcolumn = "yes"
 opt.cmdheight = 1
 opt.scrolloff = 10
-opt.completeopt = "menuone,noinsert,noselect,preview"
+opt.completeopt = "menu,menuone,preview,noselect"
 
 -- Behaviour
 opt.hidden = true
