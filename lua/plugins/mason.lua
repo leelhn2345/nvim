@@ -43,7 +43,7 @@ return {
 
 		mason_tool_installer.setup({
 			ensure_installed = {
-				"eslint_d", -- js/ts linter
+				"eslint", -- js/ts linter
 				"markdownlint", -- md formatter + linter
 				"mypy", -- python linter
 				"prettierd", -- prettier linter

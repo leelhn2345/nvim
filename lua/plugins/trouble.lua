@@ -9,6 +9,6 @@ return {
 			},
 		})
 		local opts = { noremap = true, silent = true, desc = "Workspace Diagnostics" }
-		vim.keymap.set("n", "<leader>dd", ":TroubleToggle workspace_diagnostics<CR>", opts)
+		vim.keymap.set("n", "<leader>q", ":TroubleToggle workspace_diagnostics<CR>", opts)
 	end,
 }
