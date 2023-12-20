@@ -63,7 +63,7 @@ The core keymaps are located in `lua/config/keymaps.lua`.
 
 For keymaps of plugins, they are usually located in the plugin file itself.
 
-Can use telescope to find the key mappings - `<leader>fk`.
+Can use telescope to find the key mappings - `<leader>fK`.
 
 ### Languages
 

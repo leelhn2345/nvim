@@ -13,9 +13,13 @@ return {
 				diffview = true,
 				telescope = true,
 			},
+			status = {
+				recent_commit_count = 50,
+			},
 		})
 
 		local keymap = vim.keymap
 		keymap.set("n", "gi", ":Neogit<CR>", { desc = "Git Status" })
+		keymap.set("n", "<leader>gb", ":Telescope git_branches<CR>", { desc = "Git Branches" })
 	end,
 }
