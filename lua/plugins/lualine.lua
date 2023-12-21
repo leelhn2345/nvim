@@ -4,6 +4,9 @@ local config = function()
 			theme = "tokyonight",
 			globalstatus = true,
 		},
+		sections = {
+			lualine_b = { "branch", "diagnostics" },
+		},
 	})
 end
 return {
