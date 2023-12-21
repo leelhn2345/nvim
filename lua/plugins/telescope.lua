@@ -15,6 +15,8 @@ local config = function()
 				".venv/",
 				".git/",
 				"dist/",
+				"*%-lock.json",
+				"**/*.lock",
 			},
 		},
 	})
