@@ -13,6 +13,7 @@ return {
 				"MunifTanjim/nui.nvim",
 			},
 		},
+		"b0o/schemastore.nvim",
 	},
 	config = function()
 		-- import lspconfig plugin
@@ -144,6 +145,18 @@ return {
 
 		-- configure json-lsp server
 		lspconfig["jsonls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			settings = {
+				json = {
+					schemas = require("schemastore").json.schemas(),
+					validate = { enable = true },
+				},
+			},
+		})
+
+		-- configure yaml-lsp server
+		lspconfig["yamlls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
