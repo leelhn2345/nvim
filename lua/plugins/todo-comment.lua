@@ -9,7 +9,7 @@ return {
 	config = function()
 		require("todo-comments").setup()
 		local opts = { desc = "Find Todos", noremap = true, silent = true }
-		vim.keymap.set("n", "<leader>to", ":TodoTelescope<CR>", opts)
+		vim.keymap.set("n", "<leader>td", ":TodoTelescope<CR>", opts)
 	end,
 }
 
