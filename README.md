@@ -24,8 +24,6 @@ ln -s $(which fdfind) ~/.local/bin/fd # symlink to `find`
 cargo binstall tree-sitter-cli 
 
 npm i -g emmet-ls # for emmet-lsp
-npm i -g typescript typescript-language-server # for ts-lsp
-npm i -g eslint # for eslint-lsp
 
 # for diff viewer
 sudo nala install mercurial -y
