@@ -19,9 +19,6 @@ return {
 		-- import lspconfig plugin
 		local lspconfig = require("lspconfig")
 
-		-- import rust-tools
-		local rt = require("rust-tools")
-
 		-- import cmp-nvim-lsp plugin
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
@@ -156,10 +153,19 @@ return {
 		})
 
 		-- configure rust server (special)
-		rt.setup({
+		--
+		-- check out https://rust-analyzer.github.io/manual.html
+		require("rust-tools").setup({
 			server = {
 				capabilities = capabilities,
 				on_attach = on_attach,
+				settings = {
+					["rust-analyzer"] = {
+						check = {
+							command = "clippy",
+						},
+					},
+				},
 			},
 		})
 
