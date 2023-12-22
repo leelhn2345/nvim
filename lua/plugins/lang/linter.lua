@@ -18,7 +18,7 @@ return {
 
 		-- trigger linting on various vim events
 		-- check out `:h event` to know the various events
-		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
+		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave", "TextChanged" }, {
 			group = lint_augroup,
 			callback = function()
 				lint.try_lint()

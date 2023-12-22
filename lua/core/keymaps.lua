@@ -30,4 +30,4 @@ keymap.set("v", "<", "<gv", { desc = "Outdent" })
 keymap.set("v", ">", ">gv", { desc = "Indent" })
 
 -- Docstring
-vim.api.nvim_set_keymap("n", '<leader>""', ":lua require('neogen').generate()<CR>", opts)
+vim.api.nvim_set_keymap("n", '""', ":lua require('neogen').generate()<CR>", opts)
