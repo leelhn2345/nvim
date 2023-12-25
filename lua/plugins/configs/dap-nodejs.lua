@@ -15,6 +15,7 @@ return {
 			program = "${file}",
 			cwd = "${workspaceFolder}",
 			runtimeExecutable = "node",
+			skipFiles = { "<node_internals>/**", "**/node_modules/**" },
 		},
 		{
 			type = "pwa-node",
@@ -22,6 +23,7 @@ return {
 			name = "Attach",
 			processId = require("dap.utils").pick_process,
 			cwd = "${workspaceFolder}",
+			skipFiles = { "<node_internals>/**", "**/node_modules/**" },
 		},
 	},
 }
