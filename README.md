@@ -67,4 +67,5 @@ Can use telescope to find the key mappings - `<leader>fK`.
 - nodeJS
 - rust
 
-LSPs, formatters, and linters should be installed and work right out of the box.
+LSPs, formatters, linters and debuggers should be installed and work right out
+of the box.

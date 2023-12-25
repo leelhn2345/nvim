@@ -50,6 +50,8 @@ return {
 				"prettierd", -- prettier linter
 				"stylua", -- lua formatter
 				"debugpy", -- python debugger
+				"js-debug-adapter", -- nodejs debugger
+				"codelldb", -- rust debugger
 			},
 		})
 	end,
