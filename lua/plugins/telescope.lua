@@ -4,6 +4,12 @@ local config = function()
 	local telescope = require("telescope")
 	telescope.setup({
 		defaults = {
+			layout_strategy = "vertical",
+			layout_config = {
+				vertical = {
+					prompt_position = "top",
+				},
+			},
 			mappings = {
 				i = {
 					["<C-j>"] = "move_selection_next",

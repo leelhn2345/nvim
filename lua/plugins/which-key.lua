@@ -7,20 +7,19 @@ return {
 	end,
 	opts = {},
 
-  config = function()
-    local wk = require("which-key")
+	config = function()
+		local wk = require("which-key")
 
-    wk.register({
-      f = {
-        name = "file"
-      },
-    }, {prefix = "<leader>"})
+		wk.register({
+			f = {
+				name = "file",
+			},
+		}, { prefix = "<leader>" })
 
-    wk.register({
-      e = {
-        name = "explorer"
-      },
-    }, {prefix = "<leader>"})
-  end
+		wk.register({
+			e = {
+				name = "explorer",
+			},
+		}, { prefix = "<leader>" })
+	end,
 }
-

@@ -28,6 +28,7 @@ return {
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
+				"eslint",
 				"vtsls",
 				"cssls",
 				"html",
@@ -44,7 +45,6 @@ return {
 
 		mason_tool_installer.setup({
 			ensure_installed = {
-				"eslint_d", -- js/ts linter
 				"markdownlint", -- md formatter + linter
 				"mypy", -- python linter
 				"prettierd", -- prettier linter

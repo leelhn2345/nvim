@@ -5,7 +5,7 @@ return {
 	config = function()
 		require("trouble").setup({
 			action_keys = {
-				toggle_mode = {},
+				-- toggle_mode = {},
 			},
 		})
 		local opts = { noremap = true, silent = true, desc = "Workspace Diagnostics" }
