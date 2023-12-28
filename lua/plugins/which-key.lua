@@ -21,5 +21,11 @@ return {
 				name = "explorer",
 			},
 		}, { prefix = "<leader>" })
+
+		wk.register({
+			p = {
+				name = "Peek",
+			},
+		}, { prefix = "g" })
 	end,
 }

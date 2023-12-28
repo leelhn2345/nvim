@@ -25,6 +25,15 @@ local config = function()
 				"**/*.lock",
 			},
 		},
+		pickers = {
+			keymaps = {
+				layout_config = {
+					vertical = {
+						prompt_position = "bottom",
+					},
+				},
+			},
+		},
 	})
 
 	telescope.load_extension("fzf")

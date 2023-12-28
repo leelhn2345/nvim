@@ -25,7 +25,6 @@ return {
 	-- debugger
 	{
 		"mfussenegger/nvim-dap",
-		dependencies = "williamboman/mason.nvim",
 		config = function()
 			local dap = require("dap")
 
