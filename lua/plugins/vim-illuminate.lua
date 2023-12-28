@@ -1,8 +1,8 @@
 return {
-  "RRethy/vim-illuminate",
-  lazy = false,
-  config = function ()
-    -- default configuration
-    require("illuminate").configure({})
-  end
+	"RRethy/vim-illuminate",
+	config = function()
+		require("illuminate").configure({
+			under_cursor = false,
+		})
+	end,
 }
