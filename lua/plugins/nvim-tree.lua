@@ -23,6 +23,14 @@ return {
 					enable = true,
 				},
 				root_folder_label = false,
+				highlight_git = true,
+				icons = {
+					glyphs = {
+						git = {
+							ignored = "",
+						},
+					},
+				},
 			},
 		})
 
