@@ -19,7 +19,7 @@ return {
 				dapui.close()
 			end
 
-			vim.keymap.set("n", "<leader>dt", ":lua require('dapui').toggle()<CR>")
+			vim.keymap.set("n", "<leader>dt", ":lua require('dapui').toggle()<CR>", { desc = "Debugger UI" })
 		end,
 	},
 	-- debugger

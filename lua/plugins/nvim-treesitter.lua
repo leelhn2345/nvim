@@ -27,6 +27,7 @@ local config = function()
 			"vimdoc",
 			"query",
 			"c",
+			"sql",
 		},
 		sync_install = false,
 		auto_install = true,
