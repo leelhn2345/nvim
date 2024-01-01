@@ -1,7 +1,5 @@
 return {
 	"williamboman/mason.nvim",
-	-- can't set `event = "VeryLazy" as LSP wouldn't trigger on 1st file of auto-session`
-	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
