@@ -2,6 +2,7 @@ return {
 	-- Version Control
 	{
 		"NeogitOrg/neogit",
+		event = "VeryLazy",
 		dependencies = {
 			"nvim-lua/plenary.nvim", -- required
 			"sindrets/diffview.nvim", -- optional - Diff integration
@@ -26,5 +27,5 @@ return {
 		end,
 	},
 	-- Git Blame
-	{ "f-person/git-blame.nvim" },
+	{ "f-person/git-blame.nvim", event = "VeryLazy" },
 }
