@@ -95,13 +95,13 @@ return {
 			on_attach = on_attach,
 		})
 
-		-- configure typescript server with plugin
+		-- configure typescript server
 		lspconfig["vtsls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-		-- configure typescript server with plugin
+		-- configure eslint server
 		lspconfig["eslint"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
@@ -111,21 +111,6 @@ return {
 		lspconfig["cssls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
-		})
-
-		-- configure emmet language server
-		lspconfig["emmet_ls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			filetypes = {
-				"html",
-				"typescriptreact",
-				"javascriptreact",
-				"css",
-				"sass",
-				"scss",
-				"less",
-			},
 		})
 
 		-- configure python server
@@ -140,7 +125,7 @@ return {
 			on_attach = on_attach,
 		})
 
-		-- configure json-lsp server
+		-- configure json server
 		lspconfig["jsonls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
@@ -152,7 +137,13 @@ return {
 			},
 		})
 
-		-- configure yaml-lsp server
+		-- configure toml server
+		lspconfig["taplo"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
+		-- configure yaml server
 		lspconfig["yamlls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
