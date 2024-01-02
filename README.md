@@ -23,8 +23,10 @@ ln -s $(which fdfind) ~/.local/bin/fd # symlink to `find`
 # for tree-sitter
 cargo binstall tree-sitter-cli 
 
-bun i -g emmet-ls # for emmet-lsp
-bun i -g @fsouza/prettierd # use `prettierd stop` to stop daemon process(es)
+# optional 
+# run `prettierd stop` to stop daemon process(es)
+# to prevent significant memory usage
+bun i -g @fsouza/prettierd 
 
 # for diff viewer
 sudo nala install mercurial -y
