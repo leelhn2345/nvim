@@ -55,6 +55,7 @@ return {
 				"codelldb", -- rust debugger
 				"shellcheck", -- bash linter
 				"shfmt", -- bash formatter
+				"hadolint", -- dockerfile linter
 			},
 		})
 	end,
