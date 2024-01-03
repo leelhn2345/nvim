@@ -20,6 +20,7 @@ return {
 				lua = { "stylua" },
 				python = { "ruff" },
 				rust = { "rust_analyzer" },
+				sh = { "shfmt" },
 				["_"] = { "trim_whitespace" },
 			},
 			format_on_save = {

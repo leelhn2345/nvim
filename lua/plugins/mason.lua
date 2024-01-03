@@ -53,6 +53,8 @@ return {
 				"debugpy", -- python debugger
 				"js-debug-adapter", -- nodejs debugger
 				"codelldb", -- rust debugger
+				"shellcheck", -- bash linter
+				"shfmt", -- bash formatter
 			},
 		})
 	end,
