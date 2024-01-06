@@ -5,9 +5,6 @@ return {
   config = function()
     vim.g.rustaceanvim = {
       server = {
-        on_attach = function()
-          --
-        end,
         settings = {
           -- rust-analyzer language server configuration
           ["rust-analyzer"] = {
