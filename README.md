@@ -34,16 +34,15 @@ sudo nala install mercurial -y
 
 ### Neovim Installation
 
-Go to this [link](https://github.com/neovim/neovim/blob/master/INSTALL.md) for
-the latest steps. But for conciseness, I have compiled the steps.
+Install [bob](https://github.com/MordechaiHadad/bob) - neovim version manager.
 
 ```sh
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
-sudo mv nvim.appimage ~/.local/bin/nvim
+cargo binstall bob
+bob install latest
 
-# source your start script - .bashrc / .zshrc / etc...
-# and then run the following command
+# Add ~/.local/share/bob/nvim-bin to $PATH
+nvim -v 
+
 nvim $FILENAME
 ```
 
