@@ -86,6 +86,11 @@ return {
       capabilities = capabilities,
     })
 
+    -- configure markdown server
+    lspconfig["marksman"].setup({
+      capabilities = capabilities,
+    })
+
     -- configure rust server (special)
     --
     -- check out https://rust-analyzer.github.io/manual.html
