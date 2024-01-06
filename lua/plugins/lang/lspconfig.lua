@@ -3,7 +3,6 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
-    "simrat39/rust-tools.nvim",
     { "antosha417/nvim-lsp-file-operations", config = true },
     {
       -- breadcrumbs
@@ -89,22 +88,6 @@ return {
     -- configure markdown server
     lspconfig["marksman"].setup({
       capabilities = capabilities,
-    })
-
-    -- configure rust server (special)
-    --
-    -- check out https://rust-analyzer.github.io/manual.html
-    require("rust-tools").setup({
-      server = {
-        capabilities = capabilities,
-        settings = {
-          ["rust-analyzer"] = {
-            check = {
-              command = "clippy",
-            },
-          },
-        },
-      },
     })
 
     -- configure lua server (with special settings)
