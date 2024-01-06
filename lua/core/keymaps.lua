@@ -13,8 +13,8 @@ keymap.set("n", "<C-l>", "<C-w>l", opts) -- Down
 
 -- Tab Navigation
 keymap.set("n", "<leader>nt", ":tabnew<CR>", opts) -- New Tab
-keymap.set("n", "<tab>", ":tabnext<CR>", opts) -- Next Tab
-keymap.set("n", "<s-tab>", ":tabprev<CR>", opts) -- Prev Tab
+keymap.set("n", "N", ":tabnext<CR>", opts) -- Next Tab
+keymap.set("n", "P", ":tabprev<CR>", opts) -- Prev Tab
 
 -- Window Management
 keymap.set("n", "<leader>ss", ":vsplit<CR>", opts) -- Split Vertical
@@ -30,4 +30,9 @@ keymap.set("v", "<", "<gv", { desc = "Outdent" })
 keymap.set("v", ">", ">gv", { desc = "Indent" })
 
 -- Docstring
-vim.api.nvim_set_keymap("n", '""', ":lua require('neogen').generate()<CR>", opts)
+vim.api.nvim_set_keymap(
+  "n",
+  '""',
+  ":lua require('neogen').generate()<CR>",
+  opts
+)
