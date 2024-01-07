@@ -37,7 +37,7 @@ sudo nala install mercurial -y
 Install [bob](https://github.com/MordechaiHadad/bob) - neovim version manager.
 
 ```sh
-cargo binstall bob
+cargo binstall bob-nvim
 bob install latest
 
 # Add ~/.local/share/bob/nvim-bin to $PATH
