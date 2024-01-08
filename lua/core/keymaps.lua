@@ -29,6 +29,9 @@ vim.api.nvim_set_keymap("v", "<C-_>", "gcc", comment_opts)
 keymap.set("v", "<", "<gv", { desc = "Outdent" })
 keymap.set("v", ">", ">gv", { desc = "Indent" })
 
+-- Unmap keys
+keymap.set("n", "q", "<Nop>", opts) -- I don't use macros at all... yet.
+
 -- Docstring
 vim.api.nvim_set_keymap(
   "n",
