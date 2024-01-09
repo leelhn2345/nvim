@@ -11,27 +11,31 @@ return {
 
     harpoon:setup()
 
-    vim.keymap.set("n", "<leader>a", function()
+    vim.keymap.set("n", "<leader>ha", function()
       harpoon:list():append()
     end, { desc = "Harpoon Add" })
 
-    vim.keymap.set("n", "<leader>m", function()
-      harpoon.ui:toggle_quick_menu(harpoon:list())
-    end, { desc = "Harpoon List" })
+    vim.keymap.set("n", "<leader>hr", function()
+      harpoon:list():remove()
+    end, { desc = "Harpoon Remove" })
 
-    vim.keymap.set("n", "<leader>1", function()
+    vim.keymap.set("n", "<leader>hm", function()
+      harpoon.ui:toggle_quick_menu(harpoon:list())
+    end, { desc = "Harpoon Marks" })
+
+    vim.keymap.set("n", "<leader>h1", function()
       harpoon:list():select(1)
     end, { desc = "Harpoon Mark 1" })
 
-    vim.keymap.set("n", "<leader>2", function()
+    vim.keymap.set("n", "<leader>h2", function()
       harpoon:list():select(2)
     end, { desc = "Harpoon Mark 2" })
 
-    vim.keymap.set("n", "<leader>3", function()
+    vim.keymap.set("n", "<leader>h3", function()
       harpoon:list():select(3)
     end, { desc = "Harpoon Mark 3" })
 
-    vim.keymap.set("n", "<leader>4", function()
+    vim.keymap.set("n", "<leader>h4", function()
       harpoon:list():select(4)
     end, { desc = "Harpoon Mark 4" })
 
