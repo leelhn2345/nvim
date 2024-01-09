@@ -11,10 +11,10 @@ keymap.set("n", "<C-j>", "<C-w>j", opts) -- Down
 keymap.set("n", "<C-k>", "<C-w>k", opts) -- Up
 keymap.set("n", "<C-l>", "<C-w>l", opts) -- Down
 
--- Tab Navigation
-keymap.set("n", "<leader>nt", ":tabnew<CR>", opts) -- New Tab
-keymap.set("n", "<C-n>", ":tabnext<CR>", opts) -- Next Tab
-keymap.set("n", "<C-p>", ":tabprev<CR>", opts) -- Prev Tab
+-- Tab Navigation (changed in favour of harpoon)
+-- keymap.set("n", "<leader>nt", ":tabnew<CR>", opts) -- New Tab
+-- keymap.set("n", "<C-n>", ":tabnext<CR>", opts) -- Next Tab
+-- keymap.set("n", "<C-p>", ":tabprev<CR>", opts) -- Prev Tab
 
 -- Window Management
 keymap.set("n", "<leader>ss", ":vsplit<CR>", opts) -- Split Vertical
