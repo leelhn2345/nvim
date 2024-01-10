@@ -73,5 +73,17 @@ return {
       end,
       group = autocomplete_group,
     })
+
+    -- highlight overrides
+    vim.api.nvim_set_hl(
+      0,
+      "CmpItemKindVariable",
+      { bg = "NONE", fg = "#deb887" }
+    )
+    vim.api.nvim_set_hl(
+      0,
+      "CmpItemKindInterface",
+      { link = "CmpItemKindVariable" }
+    )
   end,
 }
