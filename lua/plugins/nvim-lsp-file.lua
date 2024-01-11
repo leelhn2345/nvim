@@ -6,6 +6,6 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
   },
   config = function()
-    require("lsp-file-operations").setup({ debug = false })
+    require("lsp-file-operations").setup()
   end,
 }
