@@ -6,8 +6,8 @@ local config = function()
     defaults = {
       layout_strategy = "flex",
       layout_config = {
+        preview_cutoff = 0,
         vertical = {
-          preview_cutoff = 0,
           prompt_position = "top",
         },
       },
