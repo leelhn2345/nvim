@@ -5,7 +5,11 @@ return {
   config = function()
     require("auto-session").setup({
       auto_session_allowed_dirs = { "~/code/*", "~/.config/nvim" },
-      pre_save_cmds = { "Neotree close", "TroubleClose" },
+      pre_save_cmds = {
+        "Neotree close",
+        "TroubleClose",
+        "lua require('neogit').close()",
+      },
     })
   end,
 }
