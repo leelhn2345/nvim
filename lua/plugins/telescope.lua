@@ -51,9 +51,10 @@ return {
   "nvim-telescope/telescope.nvim",
   lazy = false,
   dependencies = {
-    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     "nvim-lua/plenary.nvim",
-    "sharkdp/fd",
+    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    "nvim-treesitter/nvim-treesitter",
+    "nvim-tree/nvim-web-devicons",
   },
   config = config,
   keys = {
