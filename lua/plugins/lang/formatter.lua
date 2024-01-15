@@ -18,7 +18,7 @@ return {
         yaml = { "prettierd" },
         markdown = { "markdownlint" },
         lua = { "stylua" },
-        python = { "ruff" },
+        python = { "ruff", "ruff_format" },
         sh = { "shfmt" },
         ["_"] = { "trim_whitespace" },
       },
