@@ -24,8 +24,9 @@ return {
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
       },
+      preselect = cmp.PreselectMode.None,
       completion = {
-        completeopt = "menu,menuone,preview,noselect",
+        completeopt = "menu,menuone,preview",
       },
       snippet = { -- configure how nvim-cmp interacts with snippet engine
         expand = function(args)
@@ -51,11 +52,27 @@ return {
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
       }),
+
       -- configure lspkind for vs-code like pictograms in completion menu
       formatting = {
         format = lspkind.cmp_format({
-          maxwidth = 50,
+          maxwidth = 30,
           ellipsis_char = "...",
+
+          -- truncate lsp source path
+          before = function(_, item)
+            local MAX_MENU_WIDTH = 20
+            local ELLIPSIS = "..."
+
+            if item.menu ~= nil then
+              local menu = item.menu
+              if #menu > MAX_MENU_WIDTH then
+                item.menu = vim.fn.strcharpart(menu, 0, MAX_MENU_WIDTH)
+                  .. ELLIPSIS
+              end
+            end
+            return item
+          end,
         }),
       },
     })
