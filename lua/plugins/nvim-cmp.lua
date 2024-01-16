@@ -56,23 +56,30 @@ return {
       -- configure lspkind for vs-code like pictograms in completion menu
       formatting = {
         format = lspkind.cmp_format({
-          maxwidth = 30,
+          maxwidth = 40,
           ellipsis_char = "...",
+          menu = {},
+          -- menu = {
+          --   buffer = "[Buffer]",
+          --   nvim_lsp = "[LSP]",
+          --   luasnip = "[Snippet]",
+          --   path = "[Path]",
+          -- },
 
           -- truncate lsp source path
-          before = function(_, item)
-            local MAX_MENU_WIDTH = 20
-            local ELLIPSIS = "..."
-
-            if item.menu ~= nil then
-              local menu = item.menu
-              if #menu > MAX_MENU_WIDTH then
-                item.menu = vim.fn.strcharpart(menu, 0, MAX_MENU_WIDTH)
-                  .. ELLIPSIS
-              end
-            end
-            return item
-          end,
+          -- before = function(_, item)
+          --   local MAX_MENU_WIDTH = 20
+          --   local ELLIPSIS = "..."
+          --
+          --   if item.menu ~= nil then
+          --     local menu = item.menu
+          --     if #menu > MAX_MENU_WIDTH then
+          --       item.menu = vim.fn.strcharpart(menu, 0, MAX_MENU_WIDTH)
+          --         .. ELLIPSIS
+          --     end
+          --   end
+          --   return item
+          -- end,
         }),
       },
     })
