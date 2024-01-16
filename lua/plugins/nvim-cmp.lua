@@ -59,6 +59,7 @@ return {
           maxwidth = 40,
           ellipsis_char = "...",
           menu = {},
+
           -- menu = {
           --   buffer = "[Buffer]",
           --   nvim_lsp = "[LSP]",
