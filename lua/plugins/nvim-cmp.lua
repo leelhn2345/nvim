@@ -42,7 +42,7 @@ return {
         -- ["<C-e>"] = cmp.mapping.abort(), -- close completion window
         ["<CR>"] = cmp.mapping.confirm({
           select = true,
-          behavior = cmp.ConfirmBehavior.Replace,
+          behavior = cmp.ConfirmBehavior.Insert,
         }),
       }),
       -- sources for autocompletion
