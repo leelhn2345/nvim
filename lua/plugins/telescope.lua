@@ -25,7 +25,7 @@ local config = function()
         "target/",
         ".*%-lock%.json",
         ".*%.lock",
-        "cache",
+        "%.(.*)cache",
         "%.next/",
       },
     },
