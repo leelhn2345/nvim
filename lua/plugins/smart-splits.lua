@@ -4,20 +4,22 @@ return {
   config = function()
     local smartSplits = require("smart-splits")
 
+    smartSplits.setup({ default_amount = 5 })
+
     local keymap = vim.keymap
     local opts = { silent = true }
 
-    opts.desc = "Resize rightwards"
-    keymap.set("n", "=", smartSplits.resize_right, opts)
-
     opts.desc = "Resize leftwards"
-    keymap.set("n", "-", smartSplits.resize_left, opts)
-
-    opts.desc = "Resize upwards"
-    keymap.set("n", "+", smartSplits.resize_up, opts)
+    keymap.set("n", "<A-h>", smartSplits.resize_left, opts)
 
     opts.desc = "Resize downwards"
-    keymap.set("n", "_", smartSplits.resize_down, opts)
+    keymap.set("n", "<A-j>", smartSplits.resize_down, opts)
+
+    opts.desc = "Resize upwards"
+    keymap.set("n", "<A-k>", smartSplits.resize_up, opts)
+
+    opts.desc = "Resize rightwards"
+    keymap.set("n", "<A-l>", smartSplits.resize_right, opts)
 
     opts.desc = "Go left pane"
     keymap.set("n", "<C-h>", smartSplits.move_cursor_left, opts)
