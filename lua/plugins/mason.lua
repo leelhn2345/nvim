@@ -57,6 +57,7 @@ return {
         "shellcheck", -- bash linter
         "shfmt", -- bash formatter
         "hadolint", -- dockerfile linter
+        "sql-formatter", -- sql formatter
       },
     })
   end,

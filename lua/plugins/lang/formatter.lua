@@ -20,6 +20,7 @@ return {
         lua = { "stylua" },
         python = { "ruff", "ruff_format" },
         sh = { "shfmt" },
+        sql = { "sql_formatter" },
         ["_"] = { "trim_whitespace" },
       },
       format_on_save = {
