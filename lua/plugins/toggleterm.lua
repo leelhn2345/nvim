@@ -3,12 +3,8 @@ return {
   version = "*",
   cmd = "ToggleTerm",
   keys = {
-    {
-      "<C-q>",
-      "<C-\\><C-n>",
-      mode = "t",
-      desc = "Terminal normal mode",
-    },
+    { "<C-\\>", ":ToggleTerm", desc = "ToggleTerm" },
+    { "<esc>", "<C-\\><C-n>", mode = "t" },
   },
   opts = {
     open_mapping = [[<c-\>]],
