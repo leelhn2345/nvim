@@ -2,14 +2,20 @@ return {
   -- Version Control
   {
     "NeogitOrg/neogit",
-    event = "VeryLazy",
+    cmd = { "Neogit" },
     dependencies = {
       "nvim-lua/plenary.nvim", -- required
       "sindrets/diffview.nvim", -- optional - Diff integration
 
       "nvim-telescope/telescope.nvim", -- optional
     },
-
+    keys = {
+      {
+        "gi",
+        ":Neogit<CR>",
+        desc = "Neogit (Git Info)",
+      },
+    },
     config = function()
       require("neogit").setup({
         integrations = {
@@ -26,15 +32,6 @@ return {
           },
         },
       })
-
-      local keymap = vim.keymap
-      keymap.set("n", "gi", ":Neogit<CR>", { desc = "Git Status" })
-      keymap.set(
-        "n",
-        "<leader>gb",
-        ":Telescope git_branches<CR>",
-        { desc = "Git Branches" }
-      )
     end,
   },
   -- Git Blame

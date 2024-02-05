@@ -1,5 +1,3 @@
-local keymap = vim.keymap
-
 local config = function()
   local telescope = require("telescope")
   telescope.setup({
@@ -58,11 +56,13 @@ return {
   },
   config = config,
   keys = {
-    keymap.set("n", "<leader>ff", ":Telescope find_files<CR>"),
-    keymap.set("n", "<leader>fK", ":Telescope keymaps<CR>"),
-    keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>"),
-    keymap.set("n", "<leader>fa", ":Telescope <CR>"),
-    keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>"),
-    keymap.set("n", "<leader>fb", ":Telescope buffers<CR>"),
+    { "<leader>ff", ":Telescope find_files<CR>" },
+    { "<leader>fK", ":Telescope keymaps<CR>" },
+    { "<leader>fh", ":Telescope help_tags<CR>" },
+    { "<leader>fa", ":Telescope <CR>" },
+    { "<leader>fg", ":Telescope live_grep<CR>" },
+    { "<leader>fb", ":Telescope buffers<CR>" },
+    { "<leader>gb", ":Telescope git_branches<CR>" },
+    { "<leader>gb", ":Telescope git_branches<CR>" },
   },
 }
