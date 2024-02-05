@@ -9,6 +9,7 @@ return {
         "Neotree close",
         "TroubleClose",
         "lua require('neogit').close()",
+        "lua require('spectre').close()",
       },
     })
   end,

@@ -30,6 +30,9 @@ bun i -g @fsouza/prettierd
 
 # for diff viewer
 sudo nala install mercurial -y
+
+# for spectre
+sudo nala install sed -y
 ```
 
 ### Neovim Installation
