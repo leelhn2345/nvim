@@ -3,11 +3,11 @@ return {
   version = "*",
   cmd = "ToggleTerm",
   keys = {
-    { "<C-\\>", ":ToggleTerm", desc = "ToggleTerm" },
+    { "\\", ":ToggleTerm", desc = "ToggleTerm" },
     { "<esc>", "<C-\\><C-n>", mode = "t" },
   },
   opts = {
-    open_mapping = [[<c-\>]],
+    open_mapping = [[\]],
     direction = "float",
   },
   config = true,
