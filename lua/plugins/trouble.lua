@@ -1,15 +1,16 @@
 return {
-	"folke/trouble.nvim",
-	event = "VeryLazy",
-	dependencies = { "nvim-tree/nvim-web-devicons", "nvim-telescope/telescope.nvim" },
-	opts = {},
-	config = function()
-		require("trouble").setup({
-			action_keys = {
-				-- toggle_mode = {},
-			},
-		})
-		local opts = { noremap = true, silent = true, desc = "Workspace Diagnostics" }
-		vim.keymap.set("n", "<leader>q", ":TroubleToggle workspace_diagnostics<CR>", opts)
-	end,
+  "folke/trouble.nvim",
+  event = "VeryLazy",
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+    "nvim-telescope/telescope.nvim",
+  },
+  keys = {
+    {
+      "<leader>q",
+      ":TroubleToggle workspace_diagnostics<CR>",
+      desc = " Workspace Diagnostics ",
+    },
+  },
+  opts = { auto_close = true },
 }
