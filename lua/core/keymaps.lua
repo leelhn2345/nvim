@@ -31,11 +31,11 @@ vim.keymap.set(
 -- Copy to system clipboard
 vim.keymap.set(
   { "n", "v" },
-  "<leader>y",
+  "y",
   [["+y]],
   { desc = "Copy to system clipboard" }
 )
-vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy to system clipboard" })
+vim.keymap.set("n", "Y", [["+Y]], { desc = "Copy to system clipboard" })
 
 -- Keep cursor centred while scrolling up and down
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Page down" })
