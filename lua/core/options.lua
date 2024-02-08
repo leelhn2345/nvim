@@ -39,6 +39,7 @@ opt.iskeyword:append("-")
 opt.mouse = "a"
 opt.modifiable = true
 opt.encoding = "UTF-8"
+opt.clipboard = "unnamedplus"
 
 -- Clipboard for WSL2
 if vim.fn.has("wsl") == 1 then
