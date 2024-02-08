@@ -5,7 +5,7 @@ return {
   config = function()
     require("neogen").setup()
 
-    local opts = { noremap = true, silent = true, desc = "Generate Docstring" }
+    local opts = { silent = true, desc = "Generate Docstring" }
 
     vim.api.nvim_set_keymap(
       "n",

@@ -14,6 +14,7 @@ return {
         "gi",
         ":Neogit<CR>",
         desc = "Neogit (Git Info)",
+        silent = true,
       },
     },
     config = function()

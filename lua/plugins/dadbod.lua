@@ -19,6 +19,7 @@ return {
       "<leader>du",
       ":DBUIToggle<CR>",
       desc = "Database UI",
+      silent = true,
     },
   },
   init = function()

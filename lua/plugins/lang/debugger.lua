@@ -7,6 +7,7 @@ return {
         "<leader>db",
         ":lua require('dapui').toggle()<CR>",
         desc = "Debugger UI",
+        silent = true,
       },
     },
     dependencies = "mfussenegger/nvim-dap",
@@ -34,11 +35,13 @@ return {
         "<leader>dp",
         ":DapToggleBreakpoint<CR>",
         desc = "Debugger Breakpoint",
+        silent = true,
       },
       {
         "<F5>",
         ":DapContinue<CR>",
         desc = "Debugger Continue",
+        silent = true,
       },
     },
     config = function()

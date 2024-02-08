@@ -10,6 +10,7 @@ return {
       "<leader>q",
       ":TroubleToggle workspace_diagnostics<CR>",
       desc = " Workspace Diagnostics ",
+      silent = true,
     },
   },
   opts = { auto_close = true },
