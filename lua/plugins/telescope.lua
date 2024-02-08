@@ -56,13 +56,12 @@ return {
   },
   config = config,
   keys = {
-    { "<leader>ff", ":Telescope find_files<CR>" },
+    { "<leader>ff", ":Telescope find_files<CR>", silent = true },
     { "<leader>fK", ":Telescope keymaps<CR>" },
     { "<leader>fh", ":Telescope help_tags<CR>" },
     { "<leader>fa", ":Telescope <CR>" },
-    { "<leader>fg", ":Telescope live_grep<CR>" },
+    { "<leader>fg", ":Telescope live_grep<CR>", silent = true },
     { "<leader>fb", ":Telescope buffers<CR>" },
-    { "<leader>gb", ":Telescope git_branches<CR>" },
     { "<leader>gb", ":Telescope git_branches<CR>" },
   },
 }
