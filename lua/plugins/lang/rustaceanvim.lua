@@ -4,7 +4,15 @@ return {
   ft = { "rust" },
   config = function()
     vim.g.rustaceanvim = {
+      tools = { float_win_config = { auto_focus = true } },
       server = {
+        on_attach = function(_, bufnr)
+          vim.keymap.set("n", "<leader>ce", ":RustLsp explainError<CR>", {
+            silent = true,
+            buffer = bufnr,
+            desc = "Explain code error",
+          })
+        end,
         settings = {
           -- rust-analyzer language server configuration
           ["rust-analyzer"] = {
