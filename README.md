@@ -34,7 +34,7 @@ sudo nala install mercurial -y
 # for spectre
 sudo nala install sed -y
 
-# include `.env` for `ripgrep` and `fd-find`
+# whitelist `.env` for `ripgrep` and `fd-find`
 # `.ignore` takes precedence over `.gitignore`
 echo "\!.env" > .ignore
 ```
