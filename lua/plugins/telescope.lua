@@ -16,20 +16,19 @@ local config = function()
         },
       },
       file_ignore_patterns = {
-        "node_modules/",
-        "%.venv/",
         "%.git/",
-        "dist/",
-        "target/",
         ".*%-lock%.json",
         ".*%.lock",
-        "%.(.*)cache",
-        "%.next/",
+        --   "node_modules/",
+        --   "%.venv/",
+        --   "dist/",
+        --   "target/",
+        --   "%.(.*)cache",
+        --   "%.next/",
       },
     },
     pickers = {
       find_files = {
-        no_ignore = true,
         hidden = true,
       },
       keymaps = {
