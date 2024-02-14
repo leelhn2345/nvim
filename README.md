@@ -36,7 +36,7 @@ sudo nala install sed -y
 
 # whitelist `.env` for `ripgrep` and `fd-find`
 # `.ignore` takes precedence over `.gitignore`
-echo "\!.env" > .ignore
+echo "\!.env" > ~/.ignore
 ```
 
 ### Neovim Installation
