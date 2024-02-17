@@ -1,5 +1,10 @@
 # Neovim Config
 
+> [!WARNING]
+> This repository is no longer maintained.
+> 
+> My Neovim config has been shifted to this [new repository](https://github.com/leelhn2345/dotfiles/tree/main/config/nvim).
+
 Neovim configs to be shared amongst my computers.
 
 This README is not meant to be a guide or any sorts,
